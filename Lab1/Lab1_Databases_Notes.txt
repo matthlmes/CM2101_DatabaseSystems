@@ -1,0 +1,55 @@
+Cardinality:
+	- HIGH cardinality = large precentage of unique values e.g. PersonID or Bank account Numbers
+	- LOW cardinality = lots of repeated values in the data range e.g. Gender(sex) M or F
+
+
+Primary Key:
+	- Primary key MUST be: Unique AND not NULL
+	- Is a unique identifier (Uniquely identifies a specific record)
+Entity Integrity: 
+	- Ensure there are no duplicate records
+	- The Primary key (Record Identifier) is unique and never NULL
+
+Foreign Key:
+	- Relationships between Tables can be represented using a foreign key
+	- Normally linked to the primary key of another table
+
+
+Data Integrity:
+	- Entity:
+		- applies to the rows of a table and makes sure each row is unique in the table
+	
+	- Domain:
+		- Applies to the columns of a table and ensures the data in a column is of the correct data type 
+		  and within the correct range of values
+
+	- Referential:
+		- Ensures the relationships between tables is valid
+	
+	- User-Defined:
+		- Allows the user to define their own integrity constraints
+
+Schema:
+	- External: What the user sees, e.g. view1(studentID, name, course)
+
+	- Logical: Table design, e.g. Students(studentID, name, address, age, course*)
+				      Courses(courseID, course_name, location)
+
+	- Physical: how data is stored on the disk, e.g. Struct Students{studentID int, name varchar(15), address varchar(15)...}; index studentID;
+
+DBMS - Database Management System:
+	- Definition: Is a collection of programs that manage database structure and controls access to data
+
+	- What it does:
+		- Enforces integrity constraints
+		- Provides methods to query data
+		- Makes data application-independent
+		- Allows multi-user access
+		- Provides security mechanisms
+		- Handles backup and recovery
+
+
+
+
+
+
